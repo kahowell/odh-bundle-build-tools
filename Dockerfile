@@ -6,3 +6,4 @@ RUN curl -L https://dl.k8s.io/release/v1.34.0/bin/linux/amd64/kubectl -o /usr/lo
 RUN chmod +x /usr/local/bin/kubectl
 ENV PATH "$PATH:/opt/app-root/src/go/bin"
 CMD /bin/bash
+USER 1000
